@@ -10,4 +10,6 @@ enum{
     TRUE
 };
 
+typedef int BOOLEAN;
+
 #endif //INC_01_EMBARALHAR_UTILS_H

@@ -3,13 +3,12 @@
 //
 
 #include "pilha.h"
-#include "utils.h"
 
 // Variáveis
 int pilha[PL_TAMANHO];
 int posicao = 0;
 
-int push(int dado)
+BOOLEAN push(int dado)
 {
     if(posicao == PL_TAMANHO) // Se a pilha estiver cheia
     {
@@ -22,7 +21,7 @@ int push(int dado)
     return TRUE;
 }
 
-int pop(int *valor)
+BOOLEAN pop(int *valor)
 {
     if(posicao == PL_VAZIO)
     {

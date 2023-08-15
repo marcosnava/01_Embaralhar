@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include "pilha.h"
-#include "utils.h"
 #include <time.h>
 #include <stdlib.h>
 #include <string.h>

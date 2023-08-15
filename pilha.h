@@ -5,6 +5,8 @@
 #ifndef INC_01_EMBARALHAR_PILHA_H
 #define INC_01_EMBARALHAR_PILHA_H
 
+#include "utils.h"
+
 // Constantes
 
 enum{
@@ -17,8 +19,8 @@ extern int pilha[PL_TAMANHO];
 extern int posicao;
 
 // Protótipos
-int push(int dado);
-int pop(int *valor);
+BOOLEAN push(int dado);
+BOOLEAN pop(int *valor);
 void flush();
 
 #endif //INC_01_EMBARALHAR_PILHA_H
