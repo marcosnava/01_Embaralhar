@@ -36,5 +36,5 @@ BOOLEAN pop(int *valor)
 
 void flush()
 {
-    posicao = 0;
+    posicao = PL_VAZIO;
 }

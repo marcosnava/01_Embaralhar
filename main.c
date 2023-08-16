@@ -25,14 +25,14 @@ struct carta {
 // Protótipos
 void geraBaralho();
 void embaralhar();
-int sorteado(int posicao);
+BOOLEAN sorteado(int posicao);
 void imprimeCarta(int posicao);
 void imprimeValor(int valor, int lado);
 int menu();
 
 int main() {
     int opcao = NAO_SELECIONADA;
-    int deuCerto;
+    BOOLEAN deuCerto;
     int posicao;
 
     while(opcao != OP_SAIR)
@@ -103,7 +103,7 @@ void embaralhar()
 {
     int i;
     int v;
-    int deuCerto;
+    BOOLEAN deuCerto;
 
     srand(time(NULL));
 
@@ -122,7 +122,7 @@ void embaralhar()
     }
 }
 
-int sorteado(int posicao)
+BOOLEAN sorteado(int posicao)
 {
     if(cartas[posicao].sorteada)
     {
